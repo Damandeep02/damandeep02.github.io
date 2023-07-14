@@ -17,19 +17,12 @@
                     <div class="card-body">
                         <h5 class="card-title"><%= campground.title %> </h5>
                         <p class="card-text"><%= campground.description %></p>
-                        <p class="card-text">
-                            <small class="text-muted"><%= campground.location%></small>
-                        </p>
                         <a class="btn btn-primary" href="/pdfs/<%=campground._id%>">View PDF</a>
                     </div>
                 </div>
             </div>
             </div>
         <% }%>
-        <script>
-            const mapToken='<%-process.env.MAPBOX_TOKEN%>';
-            const campgrounds={features: <%-JSON.stringify(campgrounds)%>}
-          </script>
-        <script src="/js/clusterMap.js"></script>
+       
     
     
